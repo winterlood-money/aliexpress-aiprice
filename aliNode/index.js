@@ -1,7 +1,13 @@
 const fs = require("fs");
 const path = require("path");
-const dataDirectory = path.join(process.cwd(), "_data");
 
+// GET PATH
+const cwd = process.cwd().split(path.sep);
+cwd.pop();
+const nodeDir = cwd.join(path.sep);
+const dataDirectory = path.join(nodeDir, "_data");
+
+// INIT HTTP CLIENT
 ApiClient = require("ali-topsdk/index").ApiClient;
 var client = new ApiClient({
     appkey: "32834908",
@@ -10,6 +16,7 @@ var client = new ApiClient({
 });
 const app_signature = "winterlood";
 
+// BUSINESS LOGICS
 function getCurrentDate() {
     var date = new Date();
     var year = date.getFullYear().toString();
