@@ -17,14 +17,13 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
-    - name: Change Directory
-      run: |
-        cd aliNode
     - name: Install Dependencies
       run: |
+        cd aliNode
         npm i --save
     - name: Run Index.js
       run: |
+        cd aliNode
         npm run start
     - name: Commits
       run: |
