@@ -1,2 +1,2 @@
-# aliexpress-aiprice
-aliexpress-aiprice
+# auto-aliexpress
+auto-aliexpress
