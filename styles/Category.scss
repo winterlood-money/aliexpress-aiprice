@@ -1,0 +1,81 @@
+@import "globals.scss";
+.Category {
+    .page_label {
+        font-family: "regaulr";
+    }
+    .grid_container {
+        margin-top: 10px;
+        display: grid;
+        gap: 15px;
+        // MOBILE
+        @media screen and (max-width: 768px) {
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        }
+
+        // DESKTOP
+        @media screen and (min-width: 768px) {
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        }
+
+        .CategoryGridItem:hover {
+            border: 1px solid $color_primary;
+        }
+        .CategoryGridItem {
+            cursor: pointer;
+            margin-top: 10px;
+            margin-bottom: 10px;
+
+            background-color: rgb(245, 245, 245);
+            padding-top: 20px;
+            padding-bottom: 20px;
+            padding-left: 15px;
+            padding-right: 15px;
+            border-radius: 5px;
+
+            .category {
+                font-family: bold;
+                display: flex;
+                align-items: center;
+                .category_icon {
+                    width: 40px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: white;
+                    padding: 8px;
+                    border-radius: 10px;
+                    font-size: 20px;
+                    margin-right: 10px;
+                }
+                .category_info {
+                    span {
+                        display: block;
+                    }
+                    // MOBILE
+                    @media screen and (max-width: 768px) {
+                        .category_name {
+                            font-size: 12px;
+                        }
+                        .category_product_count {
+                            font-size: 10px;
+                        }
+                    }
+
+                    // DESKTOP
+                    @media screen and (min-width: 768px) {
+                        .category_name {
+                            font-size: 14px;
+                        }
+                        .category_product_count {
+                            font-size: 12px;
+                        }
+                    }
+
+                    .category_product_count {
+                        font-family: "regular";
+                    }
+                }
+            }
+        }
+    }
+}

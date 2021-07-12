@@ -6,6 +6,7 @@ const cwd = process.cwd().split(path.sep);
 cwd.pop();
 const nodeDir = cwd.join(path.sep);
 const dataDirectory = path.join(nodeDir, "_data");
+const categoryDirectory = path.join(process.cwd());
 
 // INIT HTTP CLIENT
 ApiClient = require("ali-topsdk/index").ApiClient;
@@ -196,7 +197,7 @@ const getCategory = () => {
     );
 };
 
-const categoryItemList = JSON.parse(fs.readFileSync(path.join(dataDirectory, `parent_category.json`)));
+const categoryItemList = JSON.parse(fs.readFileSync(path.join(categoryDirectory, `parent_category.json`)));
 categoryItemList.forEach((item, index) => {
     console.log(`[${parseInt(index) + 1} / ${categoryItemList.length}] : ${item.category_name} 수집 시작 ...`);
     getHotproductByCategory(item);

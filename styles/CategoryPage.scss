@@ -1,0 +1,306 @@
+@import "globals.scss";
+.CategoryPage {
+    .ProductGrid {
+        flex-grow: 1;
+        .breadcumb {
+            .linkcumb:hover {
+                color: black;
+            }
+            .linkcumb {
+                cursor: pointer;
+            }
+            span {
+                font-size: 14px;
+                font-family: regular;
+                margin-right: 5px;
+                color: gray;
+            }
+        }
+        .product_grid_container {
+            margin-top: 10px;
+            display: grid;
+            gap: 15px;
+
+            // MOBILE
+            @media screen and (max-width: 768px) {
+                grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            }
+
+            // DESKTOP
+            @media screen and (min-width: 768px) {
+                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            }
+
+            .ProductItem:hover {
+                border: 1px solid $color_primary;
+            }
+            .ProductItem {
+                cursor: pointer;
+                padding-left: 10px;
+                padding-right: 10px;
+                padding-top: 5px;
+                padding-bottom: 5px;
+
+                border-radius: 5px;
+                border: 1px solid rgb(241, 241, 241);
+
+                .product_thumbnail {
+                    // MOBILE
+                    @media screen and (max-width: 768px) {
+                        height: 150px;
+                    }
+
+                    // DESKTOP
+                    @media screen and (min-width: 768px) {
+                        height: 220px;
+                    }
+
+                    background-position: center;
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    border-radius: 5px;
+                    overflow: hidden;
+                }
+                .product_info {
+                    margin-top: 10px;
+
+                    .title_box {
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        white-space: nowrap;
+                        font-family: "regular";
+                        margin-bottom: 10px;
+                        // MOBILE
+                        @media screen and (max-width: 768px) {
+                            font-size: 12px;
+                        }
+
+                        // DESKTOP
+                        @media screen and (min-width: 768px) {
+                            font-size: 14px;
+                        }
+
+                        h5 {
+                            text-overflow: inherit;
+                            overflow: inherit;
+                        }
+                    }
+                    .info_box {
+                        // MOBILE
+                        @media screen and (max-width: 768px) {
+                        }
+
+                        // DESKTOP
+                        @media screen and (min-width: 768px) {
+                        }
+                        .order_box {
+                            .order {
+                                padding-top: 1px;
+                                padding-bottom: 1px;
+                                // background-color: rgb(245, 245, 245);
+                                border-radius: 5px;
+
+                                white-space: nowrap;
+                                font-family: "regular";
+                                font-size: 12px;
+                                color: rgb(168, 168, 168);
+                            }
+                            margin-bottom: 10px;
+                        }
+
+                        .price_box {
+                            border-top: 1px solid rgb(233, 233, 233);
+                            padding-top: 5px;
+                            .origin_price {
+                                font-family: regular;
+                                color: gray;
+                                // MOBILE
+                                @media screen and (max-width: 768px) {
+                                    font-size: 11px;
+                                }
+                                // DESKTOP
+                                @media screen and (min-width: 768px) {
+                                    font-size: 14px;
+                                }
+                                margin-right: 5px;
+                                text-decoration: line-through;
+                            }
+                            .cur_price {
+                                font-family: bold;
+                                margin-right: 5px;
+                                // MOBILE
+                                @media screen and (max-width: 768px) {
+                                    font-size: 18px;
+                                }
+
+                                // DESKTOP
+                                @media screen and (min-width: 768px) {
+                                    font-size: 22px;
+                                }
+
+                                .dollar {
+                                    font-family: medium;
+                                    font-size: 15px;
+                                }
+                            }
+                            .discount {
+                                // MOBILE
+                                @media screen and (max-width: 768px) {
+                                    font-size: 8px;
+                                }
+
+                                // DESKTOP
+                                @media screen and (min-width: 768px) {
+                                    font-size: 12px;
+                                }
+
+                                white-space: nowrap;
+                                font-family: bold;
+                                padding-left: 5px;
+                                padding-right: 5px;
+                                padding-top: 1px;
+                                padding-bottom: 1px;
+                                border-radius: 5px;
+                                background-color: $back_primary;
+                                color: $color_primary;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .filter {
+        margin-top: 20px;
+        margin-bottom: 20px;
+
+        display: flex;
+        justify-content: flex-end;
+
+        // MOBILE
+        @media screen and (max-width: 768px) {
+            .filter_descript {
+                display: none;
+            }
+        }
+
+        // DESKTOP
+        @media screen and (min-width: 768px) {
+            .filter_descript {
+                font-family: regular;
+            }
+        }
+
+        .filter_main {
+            display: flex;
+            align-items: center;
+            span {
+                color: gray;
+            }
+            .divider {
+                margin-left: 15px;
+                margin-right: 15px;
+                font-family: thin;
+                font-size: 10px;
+            }
+            .on {
+                color: $color_primary;
+            }
+            .filter_item:hover {
+                color: $color_primary;
+            }
+            .filter_item {
+                cursor: pointer;
+            }
+        }
+    }
+    // MOBILE
+    @media screen and (max-width: 768px) {
+        .CategoryAside {
+            display: none;
+        }
+    }
+
+    // DESKTOP
+    @media screen and (min-width: 768px) {
+        display: flex;
+
+        .CategoryAside {
+            border-right: 1px solid rgb(245, 245, 245);
+            width: 180px;
+            margin-right: 10px;
+            padding-left: 5px;
+            padding-right: 15px;
+            h4 {
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+            @mixin category_on {
+                background-color: rgb(245, 245, 245);
+                width: 180px;
+                z-index: 2;
+                color: $color_primary;
+                .category_icon {
+                    background-color: white;
+                }
+            }
+            .category_on {
+                @include category_on;
+            }
+            .category_box:hover {
+                @include category_on;
+            }
+            .catgory_off {
+                background-color: white;
+                .category_icon {
+                    background-color: rgb(245, 245, 245);
+                }
+            }
+            .category_box {
+                cursor: pointer;
+                border-radius: 5px;
+
+                display: flex;
+                align-items: center;
+                margin-top: 8px;
+                margin-bottom: 8px;
+                padding-top: 5px;
+                padding-bottom: 5px;
+                padding-left: 10px;
+                padding-right: 10px;
+                .category_icon {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin-right: 10px;
+                    border-radius: 5px;
+                    font-size: 14px;
+                    padding: 5px;
+                    width: 30px;
+                }
+                .category_name {
+                    font-family: regular;
+                    font-size: 12px;
+                    text-overflow: ellipsis;
+                    overflow: hidden;
+                    white-space: nowrap;
+                }
+            }
+            .ellipse {
+                text-align: center;
+            }
+            .viewmore {
+                cursor: pointer;
+                margin-top: 20px;
+                background-color: rgb(245, 245, 245);
+                border-radius: 5px;
+                padding-top: 5px;
+                padding-bottom: 5px;
+                font-family: bold;
+                color: gray;
+                font-size: 12px;
+                text-align: center;
+            }
+        }
+    }
+}

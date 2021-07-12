@@ -6,24 +6,30 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
+    "prebuild": "node ./scripts/prebuild",
     "postbuild": "node ./scripts/postbuild"
   },
   "dependencies": {
-    "ali-topsdk": "^2.0.5",
+    "@react-icons/all-files": "^4.1.0",
     "@zeit/next-sass": "^1.0.1",
+    "ali-topsdk": "^2.0.5",
+    "chart.js": "^3.4.1",
     "fetch": "^1.1.0",
     "fs": "0.0.1-security",
     "globby": "^11.0.4",
     "next": "11.0.0",
+    "next-images": "^1.8.1",
     "node-sass": "^4.14.1",
     "prettier": "^2.3.1",
     "react": "17.0.2",
+    "react-chartjs-2": "^3.0.3",
     "react-dom": "17.0.2",
     "react-icons": "^4.2.0"
   },
   "devDependencies": {
     "@types/node": "^15.12.2",
     "@types/react": "^17.0.11",
+    "react-alice-carousel": "^2.5.1",
     "typescript": "^4.3.2"
   }
 }

@@ -1,0 +1,221 @@
+{
+    "category_list": [
+        {
+          "category_id": "13",
+          "category_name": "Home Improvement",
+          "icon":"🏠",
+          "category_product_count": 52,
+          "category_last_modify": "20210708053006"
+        },
+        {
+          "category_id": "1420",
+          "category_name": "Tools",
+          "icon":"🔨",
+          "category_product_count": 50,
+          "category_last_modify": "20210708053006"
+        },
+        {
+          "category_id": "15",
+          "category_name": "Home & Garden",
+          "icon":"🌳",
+          "category_product_count": 52,
+          "category_last_modify": "20210708053006"
+        },
+        {
+          "category_id": "1501",
+          "category_name": "Mother & Kids",
+          "icon":"👩‍👦",
+          "category_product_count": 47,
+          "category_last_modify": "20210708053006"
+        },
+        {
+          "category_id": "1503",
+          "category_name": "Furniture",
+          "icon":"🛏️",
+          "category_product_count": 50,
+          "category_last_modify": "20210708053006"
+        },
+        {
+          "category_id": "1511",
+          "category_name": "Watches",
+          "icon":"⌚",
+          "category_product_count": 50,
+          "category_last_modify": "20210708053006"
+        },
+        {
+          "category_id": "1524",
+          "category_name": "Luggage & Bags",
+          "icon":"👜",
+          "category_product_count": 50,
+          "category_last_modify": "20210708053006"
+        },
+        {
+          "category_id": "18",
+          "category_name": "Sports & Entertainment",
+          "icon":"🏅",
+          "category_product_count": 53,
+          "category_last_modify": "20210708053006"
+        },
+        {
+          "category_id": "200000297",
+          "category_name": "Apparel Accessories",
+          "icon":"💎",
+          "category_product_count": 49,
+          "category_last_modify": "20210708053007"
+        },
+        {
+          "category_id": "200000343",
+          "category_name": "Men's Clothing",
+          "icon":"👕",
+          "category_product_count": 50,
+          "category_last_modify": "20210708053006"
+        },
+        {
+          "category_id": "200000345",
+          "category_name": "Women's Clothing",
+          "icon":"👚",
+          "category_product_count": 50,
+          "category_last_modify": "20210708053007"
+        },
+        {
+          "category_id": "200000532",
+          "category_name": "Novelty & Special Use",
+          "icon":"⚙️",
+          "category_product_count": 39,
+          "category_last_modify": "20210708053006"
+        },
+        {
+          "category_id": "200001075",
+          "category_name": "Special Category",
+          "icon":"⚙️",
+          "category_product_count": 50,
+          "category_last_modify": "20210708053006"
+        },
+        {
+          "category_id": "200165144",
+          "category_name": "Hair Extensions & Wigs",
+          "icon":"👱",
+          "category_product_count": 50,
+          "category_last_modify": "20210708053007"
+        },
+        {
+          "category_id": "200574005",
+          "category_name": "Underwear",
+          "icon":"🩲",
+          "category_product_count": 51,
+          "category_last_modify": "20210708053007"
+        },
+        {
+          "category_id": "201169612",
+          "category_name": "Virtual Products",
+          "icon":"🏴󠁭󠁣󠁶󠁲󠁿",
+          "category_product_count": 1,
+          "category_last_modify": "20210708053005"
+        },
+        {
+          "category_id": "201355758",
+          "category_name": "Motorcycle Equipments & Parts",
+          "icon":"🏍️",
+          "category_product_count": 48,
+          "category_last_modify": "20210708053006"
+        },
+        {
+          "category_id": "21",
+          "category_name": "Office & School Supplies",
+          "icon":"🏢",
+          "category_product_count": 50,
+          "category_last_modify": "20210708053006"
+        },
+        {
+          "category_id": "26",
+          "category_name": "Toys & Hobbies",
+          "icon":"🧸",
+          "category_product_count": 47,
+          "category_last_modify": "20210708053006"
+        },
+        {
+          "category_id": "30",
+          "category_name": "Security & Protection",
+          "icon":"🔒",
+          "category_product_count": 27,
+          "category_last_modify": "20210708053006"
+        },
+        {
+          "category_id": "320",
+          "category_name": "Weddings & Events",
+          "icon":"👰",
+          "category_product_count": 50,
+          "category_last_modify": "20210708053006"
+        },
+        {
+          "category_id": "322",
+          "category_name": "Shoes",
+          "icon":"👞",
+          "category_product_count": 50,
+          "category_last_modify": "20210708053007"
+        },
+        {
+          "category_id": "34",
+          "category_name": "Automobiles, Parts & Accessories",
+          "icon":"🚗",
+          "category_product_count": 50,
+          "category_last_modify": "20210708053006"
+        },
+        {
+          "category_id": "36",
+          "category_name": "Jewelry & Accessories",
+          "icon":"💍",
+          "category_product_count": 51,
+          "category_last_modify": "20210708053006"
+        },
+        {
+          "category_id": "39",
+          "category_name": "Lights & Lighting",
+          "icon":"💡",
+          "category_product_count": 50,
+          "category_last_modify": "20210708053006"
+        },
+        {
+          "category_id": "44",
+          "category_name": "Consumer Electronics",
+          "icon":"🤖",
+          "category_product_count": 49,
+          "category_last_modify": "20210708053006"
+        },
+        {
+          "category_id": "502",
+          "category_name": "Electronic Components & Supplies",
+          "icon":"⚡",
+          "category_product_count": 50,
+          "category_last_modify": "20210708053006"
+        },
+        {
+          "category_id": "509",
+          "category_name": "Phones & Telecommunications",
+          "icon":"📱",
+          "category_product_count": 50,
+          "category_last_modify": "20210708053007"
+        },
+        {
+          "category_id": "6",
+          "category_name": "Home Appliances",
+          "icon":"🏡",
+          "category_product_count": 50, 
+          "category_last_modify": "20210708053006"
+        },
+        {
+          "category_id": "66",
+          "category_name": "Beauty & Health",
+          "icon":"🦋",
+          "category_product_count": 50,
+          "category_last_modify": "20210708053006"
+        },
+        {
+          "category_id": "7",
+          "category_name": "Computer & Office",
+          "icon":"🖥️",
+          "category_product_count": 50,
+          "category_last_modify": "20210708053006"
+        }
+      ]
+}

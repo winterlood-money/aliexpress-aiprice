@@ -1,0 +1,18 @@
+@import "globals.scss";
+.Layout {
+    // background-color: rgb(245, 245, 245);
+    .article {
+        @include page_padding;
+        padding-top: 70px;
+        padding-bottom: 70px;
+
+        // MOBILE
+        @media screen and (max-width: 768px) {
+            padding-bottom: 50px;
+        }
+
+        // DESKTOP
+        @media screen and (min-width: 768px) {
+        }
+    }
+}

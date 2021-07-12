@@ -1,0 +1,46 @@
+@import "./globals.scss";
+
+.Header {
+    @include page_padding;
+    // @include shadow;
+
+    border-bottom: 1px solid rgb(241, 241, 241);
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    backdrop-filter: saturate(180%) blur(20px);
+    background-color: rgba(255, 255, 255, 0.72);
+
+    position: absolute;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    z-index: 1;
+
+    .logo {
+        cursor: pointer;
+        img {
+            width: 80px;
+            opacity: 0.8;
+        }
+    }
+    .menu_list {
+        .menu_btn {
+            @include shadow;
+            font-family: bold;
+            cursor: pointer;
+            background-color: rgb(245, 245, 245);
+            padding-left: 8px;
+            padding-right: 8px;
+            padding-top: 4px;
+            padding-bottom: 4px;
+            border-radius: 5px;
+        }
+    }
+}

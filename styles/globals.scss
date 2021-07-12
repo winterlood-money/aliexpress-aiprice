@@ -1,0 +1,149 @@
+@font-face {
+    font-family: "thin";
+    src: url("./../fonts/NotoSansCJKkr-Thin.otf") format("truetype");
+}
+@font-face {
+    font-family: "regular";
+    src: url("./../fonts/NotoSansCJKkr-Regular.otf") format("truetype");
+}
+@font-face {
+    font-family: "medium";
+    src: url("./../fonts/NotoSansCJKkr-Medium.otf") format("truetype");
+}
+@font-face {
+    font-family: "light";
+    src: url("./../fonts/NotoSansCJKkr-Light.otf") format("truetype");
+}
+@font-face {
+    font-family: "Bold";
+    src: url("./../fonts/NotoSansCJKkr-Bold.otf") format("truetype");
+}
+@font-face {
+    font-family: "Black";
+    src: url("./../fonts/NotoSansCJKkr-Black.otf") format("truetype");
+}
+// COLORS
+$color_primary: #ff4747;
+$back_primary: #ffd9d9;
+
+// MIXINS
+@mixin page_padding {
+    // MOBILE
+    @media screen and (max-width: 768px) {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    // DESKTOP
+    @media screen and (min-width: 768px) {
+        padding-left: 12%;
+        padding-right: 12%;
+    }
+}
+
+@mixin shadow {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+html,
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans,
+        Helvetica Neue, sans-serif;
+    // background: rgb(245, 245, 245);
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+* {
+    box-sizing: border-box;
+}
+.badge {
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 5px;
+    padding-right: 5px;
+    background-color: $back_primary;
+    border-radius: 5px;
+    color: $color_primary;
+    font-family: medium;
+}
+.wide_banner {
+    @include shadow;
+    // MOBILE
+    @media screen and (max-width: 768px) {
+        height: 55px;
+    }
+
+    // DESKTOP
+    @media screen and (min-width: 768px) {
+        height: 160px;
+    }
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: $color_primary;
+    background-size: contain;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    margin: 0px;
+}
+h4 {
+    font-family: bold;
+    margin: 0px;
+}
+h5 {
+    margin: 0px;
+    font-family: "regular";
+}
+// MOBILE
+@media screen and (max-width: 768px) {
+    .pc_only {
+        display: none;
+    }
+    h2 {
+        font-size: 20px;
+    }
+    h4 {
+        font-size: 15px;
+    }
+    h5 {
+        font-size: 13px;
+    }
+    .badge {
+        font-size: 10px;
+    }
+}
+
+// DESKTOP
+@media screen and (min-width: 768px) {
+    .mobile_only {
+        display: none;
+    }
+    h2 {
+        font-size: 2rem;
+    }
+    h4 {
+        font-size: 1.1rem;
+    }
+    h5 {
+        font-size: 12px;
+    }
+    .badge {
+        font-size: 0.8rem;
+    }
+}
+
+// MOBILE
+@media screen and (max-width: 768px) {
+}
+
+// DESKTOP
+@media screen and (min-width: 768px) {
+}

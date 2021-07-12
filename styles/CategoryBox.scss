@@ -1,0 +1,56 @@
+@import "globals.scss";
+.CategoryBox {
+    margin-top: 30px;
+    margin-bottom: 35px;
+    .box_header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .grid_container {
+        @include shadow;
+        background-color: rgb(248, 248, 248);
+        overflow: hidden;
+        border-radius: 5px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 1px; /* you can use gap instead of grid-gap */
+
+        .category_item:hover {
+            background: $color_primary;
+            color: white;
+        }
+        .category_item {
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+
+            overflow: hidden;
+            background-color: white;
+
+            font-family: "medium";
+            outline: 1px solid rgb(235, 235, 235); /* Use outline instead of border */
+            border-collapse: collapse;
+            font-size: 12px;
+            padding-left: 10px;
+            padding-right: 10px;
+
+            height: 60px;
+
+            span {
+                display: block;
+            }
+
+            .category_icon {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: rgb(245, 245, 245);
+                padding: 5px;
+                border-radius: 5px;
+                width: 30px;
+                margin-right: 10px;
+            }
+        }
+    }
+}

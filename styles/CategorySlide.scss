@@ -1,0 +1,32 @@
+@import "globals.scss";
+.CategorySlide {
+    // MOBILE
+    @media screen and (max-width: 768px) {
+        .alice-carousel__dots {
+            display: none;
+        }
+    }
+
+    // DESKTOP
+    @media screen and (min-width: 768px) {
+    }
+
+    .CategoryItem {
+        .item_wrapper {
+            width: 120px;
+            height: 55px;
+            border-radius: 5px;
+            // background-color: black;
+            color: white;
+            font-family: bold;
+            text-align: center;
+            font-size: 12px;
+
+            padding-left: 10px;
+            padding-right: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+}

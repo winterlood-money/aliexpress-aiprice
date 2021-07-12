@@ -1,0 +1,135 @@
+@import "globals.scss";
+
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@500&display=swap");
+.ProductSlide {
+    margin-bottom: 35px;
+    .slide_wrapper {
+        margin-top: 10px;
+        position: relative;
+
+        .slide_btn {
+            position: absolute;
+            top: 0px;
+            height: 100%;
+            padding-left: 10px;
+            padding-right: 10px;
+            display: flex;
+            align-items: center;
+            color: rgba(0, 0, 0, 0);
+            padding-left: 5px;
+            padding-right: 5px;
+        }
+        .slide_btn:hover {
+            cursor: pointer;
+            transition: 0.2s;
+            background-color: rgba(0, 0, 0, 0.8);
+            color: white;
+            font-family: "IBM Plex Sans", sans-serif;
+            font-size: 30px;
+        }
+        .prev_button {
+            left: 0px;
+            // border-top-left-radius: 5px;
+            // border-bottom-left-radius: 5px;
+        }
+        .next_button {
+            right: 0px;
+            // border-top-right-radius: 5px;
+            // border-bottom-right-radius: 5px;
+        }
+    }
+
+    .ProductItem {
+        cursor: pointer;
+        padding: 5px;
+        .item_wrapper:hover {
+            border: 1px solid $color_primary;
+        }
+        .item_wrapper {
+            background-color: white;
+            // margin-right: 15px;
+            overflow: hidden;
+            border-radius: 5px;
+            border: 1px solid rgb(238, 238, 238);
+
+            @media screen and (max-width: 600px) {
+                .thumbnail_box {
+                    height: 100px;
+                }
+                .alice-carousel__prev-btn,
+                .alice-carousel__next-btn {
+                    display: none;
+                }
+            }
+            @media screen and (min-width: 600px) and (max-width: 1024px) {
+                .thumbnail_box {
+                    height: 120px;
+                }
+            }
+            @media screen and (min-width: 1024px) {
+                .thumbnail_box {
+                    height: 150px;
+                }
+            }
+
+            .thumbnail_box {
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            .info_box {
+                padding: 10px;
+                .extra_box {
+                    border-top: 1px solid rgb(230, 230, 230);
+                    margin-top: 5px;
+                    padding-top: 5px;
+                    display: flex;
+                    justify-content: flex-end;
+                    align-items: baseline;
+                    span {
+                        margin-left: 5px;
+                    }
+                    .value {
+                        font-family: bold;
+                        font-size: 14px;
+                        color: $color_primary;
+                    }
+                    .label {
+                        font-family: "thin";
+                        font-size: 12px;
+                        color: rgb(83, 83, 83);
+                    }
+                }
+                .title {
+                    text-overflow: ellipsis;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    margin-bottom: 10px;
+                }
+                .price {
+                    font-family: bold;
+                    font-size: 15px;
+                }
+            }
+
+            .extra_stat_box {
+                color: white;
+                border: 1px solid $color_primary;
+                background-color: $color_primary;
+                display: inline;
+                padding-left: 8px;
+                padding-right: 8px;
+                padding-top: 2px;
+                padding-bottom: 2px;
+
+                position: absolute;
+                top: 15px;
+                right: 15px;
+                border-radius: 20px;
+
+                font-family: bold;
+                font-size: 12px;
+            }
+        }
+    }
+}
