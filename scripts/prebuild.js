@@ -46,7 +46,7 @@ function getTotalCategoryList() {
         total_category_list.push({
             category_id: fileContent.category_id,
             category_name: fileContent.category_name,
-            category_product_count: fileContent.product_list.length,
+            category_product_count: fileContent.product_list && fileContent.product_list.length,
             category_last_modify: fileContent.last_modify,
         });
     });
