@@ -4,7 +4,7 @@ const path = require("path");
 const fetch = require("node-fetch");
 const dataDirectory = path.join(process.cwd(), "_data");
 
-const HOSTNAME = "https://ali.aiprice.shop/";
+const HOSTNAME = "https://aliall.shop/";
 
 function formatDate(date) {
     var d = new Date(date),

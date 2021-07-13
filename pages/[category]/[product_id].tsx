@@ -11,9 +11,9 @@ const DetailPage = ({ data }) => {
     const DynamicPriceHistroyChart = dynamic(() => import("../../component/PriceHistoryChart"));
     const DynamicAmazonAds = dynamic(() => import("../../component/AmazonWideAds"));
     const metaObj = {
-        domain: "https://ali.aiprice.shop/",
+        domain: "https://aliall.shop/",
         title: `${data.product_title} 👉 All About AliExpress - AliAll`,
-        url: `https://ali.aiprice.shop/${data.first_level_category_id}/${data.product_id}`,
+        url: `https://aliall.shop/${data.first_level_category_id}/${data.product_id}`,
         image: `${data.product_main_image_url}`,
         description: `${data.product_title}, ${data.first_level_category_name}, ${
             data.second_level_category_name
