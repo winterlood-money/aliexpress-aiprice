@@ -4,6 +4,15 @@ import fs from "fs";
 const dataDirectory = path.join(process.cwd(), "_data");
 const indexDataDirectory = path.join(process.cwd(),"_processed_data")
 
+// UTILS
+function get_date_by_string(date_string){
+    console.log(date_string);
+    
+    const res = new Date(date_string.slice(0, 4), date_string.slice(4, 6) - 1, date_string.slice(6, 8),
+    date_string.slice(8, 10), date_string.slice(10, 12), date_string.slice(12, 14))
+    return res;
+}
+
 // index.tsx
 export function GET_INDEX_PAGE(){
     const index_data_path = path.join(indexDataDirectory,'index_data.json');
@@ -55,8 +64,13 @@ export function GET_DETAIL_DATA(category,product_id){
     const shuffled = product_list.sort(() => 0.5 - Math.random());
     const related_product_list  = shuffled.slice(0,5)
 
+    const target_product_item = fileContent.product_list.find((it)=>parseInt(it.product_id) === parseInt(product_id));
+
+
+    const last_modify = get_date_by_string(target_product_item.last_modify);
     return {
-        ...fileContent.product_list.find((it)=>parseInt(it.product_id) === parseInt(product_id)),
+        ...target_product_item,
+        last_modify : last_modify.toString(),
         related_product_list : related_product_list
     }
 }

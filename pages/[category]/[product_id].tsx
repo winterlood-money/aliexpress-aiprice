@@ -20,6 +20,14 @@ const DetailPage = ({ data }) => {
         }, ${data.related_product_list.map((it) => it.product_title)}`,
         price_amount: `${data.sale_price}`,
     };
+
+    const last_update = new Date(data.last_modify).toLocaleDateString("en-US", {
+        weekday: "long",
+        year: "numeric",
+        month: "long",
+        day: "numeric",
+    });
+
     return (
         <div className="ProductDetail">
             <Head>
@@ -44,6 +52,14 @@ const DetailPage = ({ data }) => {
                         <Link href={`/${data.first_level_category_id}`}>
                             <span className="category_item">{data.second_level_category_name}</span>
                         </Link>
+                    </div>
+                </div>
+                <div className="section_item">
+                    <div className="item_header">
+                        <h4>🕓 LAST UPDATE</h4>
+                    </div>
+                    <div className="item_main last_update">
+                        <time dateTime={data.last_modify}>{last_update}</time>
                     </div>
                 </div>
                 <div className="section_item">

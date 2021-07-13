@@ -52,6 +52,13 @@
         width: 100%;
     }
 
+    .last_update {
+        time {
+            font-family: regular;
+            font-size: 13px;
+            color: gray;
+        }
+    }
     .product_main_image {
         img {
             border-radius: 5px;
