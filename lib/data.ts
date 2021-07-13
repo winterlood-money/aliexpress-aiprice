@@ -4,6 +4,22 @@ import fs from "fs";
 const dataDirectory = path.join(process.cwd(), "_data");
 const indexDataDirectory = path.join(process.cwd(),"_processed_data")
 
+// index.tsx
+export function GET_INDEX_PAGE(){
+    const index_data_path = path.join(indexDataDirectory,'index_data.json');
+    const fileContent = JSON.parse(fs.readFileSync(`${index_data_path}`, "utf8"));
+    return fileContent
+}
+
+
+// _app.tsx 
+export function GET_CATEGORY_LIST(){
+    const category_data_path = path.join(indexDataDirectory,'category.json');
+    const fileContent = JSON.parse(fs.readFileSync(`${category_data_path}`, "utf8"));
+    return fileContent.category_list || [];
+}
+
+
 // [category].tsx
 export function GET_CATEGORY_DATA(category_id){
     const fileContent = JSON.parse(fs.readFileSync(`${dataDirectory}/${category_id}.json`, "utf8"));
@@ -11,9 +27,10 @@ export function GET_CATEGORY_DATA(category_id){
     const CategoryListFileContent = GET_CATEGORY_LIST();
     const targetCategoryItem = CategoryListFileContent.find((it)=>it.category_id === category_id);
 
+    const icon = targetCategoryItem ? targetCategoryItem.icon : null
     return {
         cur_category_data:{
-            ...fileContent, icon:targetCategoryItem.icon,
+            ...fileContent, icon:icon,
         },
         category_list:CategoryListFileContent
     }
@@ -60,19 +77,4 @@ export function GET_DETAIL_PAGES(){
 
     
     return pathList;
-}
-
-// index.tsx
-export function GET_INDEX_PAGE(){
-    const index_data_path = path.join(indexDataDirectory,'index_data.json');
-    const fileContent = JSON.parse(fs.readFileSync(`${index_data_path}`, "utf8"));
-    return fileContent
-}
-
-
-// _app.tsx 
-export function GET_CATEGORY_LIST(){
-    const category_data_path = path.join(indexDataDirectory,'category.json');
-    const fileContent = JSON.parse(fs.readFileSync(`${category_data_path}`, "utf8"));
-    return fileContent.category_list || [];
 }
