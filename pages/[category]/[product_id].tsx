@@ -38,6 +38,7 @@ const DetailPage = ({ data }) => {
                 <meta property="product:price:amount" content={metaObj.price_amount}></meta>
                 <meta property="og:title" content={metaObj.title}></meta>
                 <meta property="og:url" content={metaObj.url}></meta>
+                <meta property="og:image" content={metaObj.image} />
                 <meta property="og:description" content={metaObj.description} />
             </Head>
             <div className="left_col">
