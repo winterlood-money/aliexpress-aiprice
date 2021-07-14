@@ -20,15 +20,21 @@ gtag('js', new Date());
 
 gtag('config', 'G-D3756NB4S4');
 `;
+
 const MyApp = ({ Component, pageProps }) => {
     return (
         <div className="Layout">
             <Head>
+                {/* GOOGLE */}
                 <meta name="google-site-verification" content="3vdcbQ-kpzHyXCDVh2Qxi9rfB4YcPzgOv2CPoRx3p4o" />
                 <script async src="https://www.googletagmanager.com/gtag/js?id=G-D3756NB4S4"></script>
                 <script dangerouslySetInnerHTML={{ __html: googleAnalyticsTag }}></script>
+                {/* NAVER */}
                 <meta name="naver-site-verification" content="50e02d1d9c5566aecc136ff83f465dcb0cff32f2" />
+                {/* BING & YAHOO */}
                 <meta name="msvalidate.01" content="D6A67E754ABDD8C96AF1B1CDCDE1AD99" />
+                {/* YANDEX */}
+                <meta name="yandex-verification" content="fcfee01da6ee80bd" />
 
                 <script src="https://unpkg.com/embla-carousel"></script>
                 <title>All About AliExpress - AliAll</title>
