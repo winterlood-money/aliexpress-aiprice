@@ -182,9 +182,9 @@ const CategoryPage = ({ data }) => {
         title: `${cur_category_data.category_name} 👉 All About AliExpress - AliAll`,
         url: `https://aliall.shop/${cur_category_data.category_id}`,
         image: `${shareImage.src}`,
-        description: `${cur_category_data.category_name} - ${cur_category_data.product_list.map(
-            (it) => it.product_title
-        )}`,
+        description: `Hot Product ${cur_category_data.category_name} - ${cur_category_data.product_list
+            .slice(0, 5)
+            .map((it) => it.product_title)}`,
     };
     return (
         <div className="CategoryPage">

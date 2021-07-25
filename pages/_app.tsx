@@ -35,15 +35,10 @@ const MyApp = ({ Component, pageProps }) => {
                 <meta name="msvalidate.01" content="D6A67E754ABDD8C96AF1B1CDCDE1AD99" />
                 {/* YANDEX */}
                 <meta name="yandex-verification" content="fcfee01da6ee80bd" />
-
                 <script src="https://unpkg.com/embla-carousel"></script>
                 <title>All About AliExpress - AliAll</title>
                 <meta http-equiv="content-language" content="en" />
-
                 <meta name={"viewport"} content="width=device-width, initial-scale=1" />
-                <meta name="robots" content="index, follow" />
-
-                <meta property="og:locale" content="en_US" />
                 <meta property="og:site_name" content="aliall.shop"></meta>
             </Head>
             <Header />

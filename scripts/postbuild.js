@@ -111,7 +111,7 @@ function main() {
              return `<url>
          <loc>${item.url}</loc>
          <lastmod>${item.date}</lastmod>
-         <changefreq>daily</changefreq>
+         <changefreq>weekly</changefreq>
          <priority>1.0</priority>
          </url>
          `;
@@ -122,7 +122,7 @@ function main() {
              return `<url>
         <loc>${item.url}</loc>
         <lastmod>${item.date}</lastmod>
-        <changefreq>daily</changefreq>
+        <changefreq>weekly</changefreq>
         <priority>0.5</priority>
         </url>
         `;

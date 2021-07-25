@@ -12,12 +12,10 @@ const DetailPage = ({ data }) => {
     const DynamicAmazonAds = dynamic(() => import("../../component/AmazonWideAds"));
     const metaObj = {
         domain: "https://aliall.shop/",
-        title: `${data.product_title} 👉 All About AliExpress - AliAll`,
+        title: `${data.product_title} - Hot ${data.first_level_category_name} 👉 All About AliExpress - AliAll`,
         url: `https://aliall.shop/${data.first_level_category_id}/${data.product_id}`,
         image: `${data.product_main_image_url}`,
-        description: `${data.product_title}, ${data.first_level_category_name}, ${
-            data.second_level_category_name
-        }, ${data.related_product_list.map((it) => it.product_title)}`,
+        description: `${data.product_title}, ${data.first_level_category_name}, ${data.second_level_category_name}`,
         price_amount: `${data.sale_price}`,
     };
 
